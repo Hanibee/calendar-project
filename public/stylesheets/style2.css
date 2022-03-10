@@ -1,0 +1,34 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: #fae9b9;
+    /* background-image: url('../images/taco2.png');
+    background-size:cover; */
+  }
+  
+  a {
+    color: #00B7FF;
+    font-family: 'Permanent Marker', cursive;
+  }
+  
+  h1 {
+    font-family: 'Permanent Marker', cursive;
+    line-height: 22px;
+  }
+  
+  label {
+    font-family: 'Permanent Marker', cursive;
+    line-height: 22px;
+  }
+  
+  button {
+    font-family: 'Permanent Marker', cursive;
+    background-color: rgb(161, 224, 233);
+    line-height: 22px;
+  }
+  
+  hr {
+    color: rgba(238, 177, 169, 0.856);
+  }
+  
+  

@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node ./bin/www.js"
+    "start": "nodemon ./bin/www.js"
   },
   "dependencies": {
     "axios": "^0.26.0",
@@ -13,10 +13,10 @@
     "ejs": "^3.1.6",
     "express": "^4.17.3",
     "express-session": "^1.17.2",
-    "googleapis": "^39.2.0",
+    "googleapis": "^96.0.0",
     "http-errors": "^2.0.0",
     "method-override": "^3.0.0",
-    "mongoose": "^6.2.4",
+    "mongoose": "^6.2.5",
     "morgan": "^1.10.0",
     "passport": "^0.5.2",
     "passport-google-oauth20": "^2.0.0",
