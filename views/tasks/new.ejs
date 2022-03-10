@@ -22,12 +22,14 @@
         <input type="text" name="name" id="name"></input>
     </div>
     <div>
-        <label for ="tasty">Date</label>
-        <input type="checkbox", name="tasty" id="tasty"></input>
+        <label for="meeting-time">Choose a time and date:</label>
+        <input type="datetime-local" id="meeting-time"
+       name="meeting-time" value="2018-06-12T19:30"
+       min="2018-06-07T00:00" max="2018-06-14T00:00">
     </div>
     <div>
-        <label for ="tasty">Location</label>
-        <input type="checkbox", name="tasty" id="tasty"></input>
+        <label for ="location">Add a location:</label>
+        <input type="text", name="location" id="location"></input>
     </div>
     <br></br>
     <button type="submit">Add task</button>
