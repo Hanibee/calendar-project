@@ -6,9 +6,9 @@ My app uses the Google Calendar API to allow users to input tasks quickly and di
 [Heroku Deployed App Link](https://hanibee-calendarproject.herokuapp.com/)
 
 Screenshots of Application:
-![Image 1](../images/screenshot1.png)
-![Image 2](../images/screenshot2.png)
-![Image 3](../images/screenshot3.png)
+![Image 1](https://raw.githubusercontent.com/Hanibee/calendar-project/main/public/images/screenshot1.png)
+![Image 2](https://raw.githubusercontent.com/Hanibee/calendar-project/main/public/images/screenshot2.png)
+![Image 3](https://raw.githubusercontent.com/Hanibee/calendar-project/main/public/images/screenshot3.png)
 
 List of technologies used:
 - Heroku
