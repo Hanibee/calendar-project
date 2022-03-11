@@ -5,7 +5,7 @@ My app uses the Google Calendar API to allow users to input tasks quickly and di
 
 [Heroku Deployed App Link](https://hanibee-calendarproject.herokuapp.com/)
 
-![Screenshots of Application]('../images/screenshot1', '../images/screenshot2', '../images/screenshot3')
+![Screenshots of Application](screenshot1.png)(screenshot2.png)(screenshot3.png)
 
 List of technologies used:
 - Heroku
