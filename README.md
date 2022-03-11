@@ -22,7 +22,7 @@ List of technologies used:
 Example code: 
 
 Google calendar implementation code using Nylas API:
-Using Nylas, I listed the events through events.list which grabs all of the calendars for each user and displays the events. Then in the views folder for calendar, I embeded a frame of the user's Google Calendar and imported it via the user's Gmail account.
+Using Nylas, I listed the events through events.list which grabs all of the events for the user and passed it into the object events. The calendar is then supposed to list the events however at the moment, it's trying to grab all of the calendars for each user so I'm not able to list the events for one calendar. Then in the views folder for calendar, I embeded a frame of the user's Google Calendar and imported it via the user's Gmail account.
 
 Next steps:
 
