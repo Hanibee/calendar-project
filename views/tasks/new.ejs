@@ -1,5 +1,5 @@
-<%- include('./partials/html-head') %>
-<%- include('./partials/nav') %>
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="/stylesheets/style2.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <title>Add new task</title>
-    <hr></hr>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">    <title>Add new task</title>
 </head>
 <body>
     <h1>Add new task</h1>
@@ -22,10 +21,10 @@
         <input type="text" name="name" id="name"></input>
     </div>
     <div>
-        <label for="meeting-time">Choose a time and date:</label>
-        <input type="datetime-local" id="meeting-time"
-       name="meeting-time" value="2018-06-12T19:30"
-       min="2018-06-07T00:00" max="2018-06-14T00:00">
+        <label for="meetingtime">Choose a time and date:</label>
+        <input type="datetime-local" id="meetingtime"
+       name="meetingtime" value="2022-03-11T19:30"
+       min="2022-01-07T00:00" max="2026-06-14T00:00">
     </div>
     <div>
         <label for ="location">Add a location:</label>
@@ -37,4 +36,4 @@
 </body>
 </html>
 
-<%- include('./partials/footer') %>
+<%- include('../partials/footer') %>

@@ -1,8 +1,10 @@
 <%- include('./partials/html-head') %>
 <%- include('./partials/nav') %>
-
-<main>
-  <h1>hello, <%= user ? user.profile.name : "friend" %></h1>
+<link rel="stylesheet" href="/stylesheets/style2.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet"><main>
+  <h1>Google Calendar Task Manager</h1>
   <% if (user?.profile.avatar) { %>
     <div>
       <img
@@ -11,6 +13,14 @@
       />
     </div>
   <% } %>
+  <img src="">
+  <a href="/tasks/">
+    <button type="submit">Add/Manage Tasks</button>
+  </a>
+  <img src="">
+  <a href="/calendar/">
+    <button type="submit">View Google Calendar</button>
+  </a>
 </main>
 
 <%- include('./partials/footer') %>

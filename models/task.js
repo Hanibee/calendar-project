@@ -4,8 +4,8 @@ const schema = mongoose.Schema
 
 const taskSchema = new schema({
     name: String,
-    tasty: Boolean
-
+    location: String,
+    meetingtime: String,
 }, {
     timestamps: true
 })

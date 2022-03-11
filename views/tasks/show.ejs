@@ -1,5 +1,5 @@
-<%- include('./partials/html-head') %>
-<%- include('./partials/nav') %>
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,15 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="/stylesheets/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <title>Task Details</title>
+    <link rel="stylesheet" href="/stylesheets/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">    <title>Task Details</title>
     <hr></hr>
 </head>
 <body>
   <h1><%= task.name %></h1>  
-  isTasty? <%= task.tasty %>
+  <p><%= task.location %></p>
+  <p><%= task.meetingtime %></p>
 
   <form action = "/tasks/<%= task._id %>/delete" method="POST">
 <button type="submit">Delete <%= task.name %></button>
@@ -25,4 +26,4 @@
   <a href="/tasks">Back to all tasks</a>
 </body>
 </html>
-<%- include('./partials/footer') %>
+<%- include('../partials/footer') %>

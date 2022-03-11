@@ -3,20 +3,25 @@ import {Task} from '../models/task.js'
 function index(req, res) {
     Task.find({})
     .then(tasks => {
-        console.log(tasks)
-        console.log(req.user)
-        res.render('tasks/index', {tasks})
+        res.render('tasks/index', {
+            tasks,
+            title: 'Tasks', 
+            user: req.user ? req.user : null
+        })
     })
     .catch(err => console.error(err))
 }
 
 function newTask(req, res) {
-    res.render('tasks/new')
+    res.render('tasks/new',
+    {
+        title: 'Tasks', 
+        user: req.user ? req.user : null
+    })
 }
 
 
 function create(req, res){
-    req.body.tasty = !!req.body.tasty
     Task.create(req.body)
     .then(res.redirect('/tasks/'))
     .catch(err => console.error(err))
@@ -25,7 +30,12 @@ function create(req, res){
 function show(req, res) {
     Task.findById(req.params.id)
     .then(task => {
-        res.render('tasks/show', {task})})
+        res.render('tasks/show', 
+        {
+            task,
+            title: 'Tasks', 
+            user: req.user ? req.user : null
+        })})
     .catch(err => console.error(err))
 }
 
@@ -42,7 +52,7 @@ export {
     newTask as new,
     create,
     show,
-    deleteTask as delete
+    deleteTask as delete,
 }
 
 

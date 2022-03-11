@@ -7,6 +7,7 @@ import session from 'express-session'
 import logger from 'morgan'
 import methodOverride from 'method-override'
 import passport from 'passport'
+import Nylas from 'nylas'
 
 // connect to MongoDB with mongoose
 import('./config/database.js')
@@ -18,6 +19,7 @@ import('./config/passport.js')
 import { router as indexRouter } from './routes/index.js'
 import { router as authRouter } from './routes/auth.js'
 import { router as tasksRouter } from './routes/tasks.js'
+import { router as calendarRouter } from './routes/calendar.js'
 
 // create the express app
 const app = express()
@@ -28,6 +30,11 @@ app.set(
   path.join(path.dirname(fileURLToPath(import.meta.url)), 'views')
 )
 app.set('view engine', 'ejs')
+
+Nylas.config({
+    clientId: process.env.CLIENT_ID,
+    clientSecret: process.env.CLIENT_SECRET,
+});
 
 // middleware
 app.use(methodOverride('_method'))
@@ -59,6 +66,8 @@ app.use(passport.session())
 // router middleware
 app.use('/', indexRouter)
 app.use('/auth', authRouter)
+app.use('/tasks', tasksRouter)
+app.use('/calendar', calendarRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

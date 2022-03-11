@@ -1,20 +1,18 @@
 body {
-    padding: 50px;
+    padding: 70px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-    background-color: #fae9b9;
-    /* background-image: url('../images/taco2.png');
-    background-size:cover; */
+    background-color: rgba(141, 148, 248, 0.918);
+    background-size: cover;
+    /* background-image: linear-gradient(to bottom, #c079eb, #d490eb, #e4a9ed, #f0c2f0, #f9dcf5); */
+    background-image: linear-gradient(to bottom, #c782f1, #79b4ff, #5fd5ff, #9aeaef, #dcf9ec);
   }
   
   a {
     color: #00B7FF;
-    font-family: 'Permanent Marker', cursive;
-  }
+    font-family: 'Major Mono Display', monospace;  }
   
   h1 {
-    font-family: 'Permanent Marker', cursive;
-    line-height: 22px;
-  }
+    font-family: 'Major Mono Display', monospace;  }
   
   label {
     font-family: 'Permanent Marker', cursive;
@@ -22,13 +20,13 @@ body {
   }
   
   button {
-    font-family: 'Permanent Marker', cursive;
-    background-color: rgb(161, 224, 233);
+    font-family: 'Major Mono Display', monospace;    
     line-height: 22px;
+
   }
   
   hr {
-    color: rgba(238, 177, 169, 0.856);
+    color: rgba(73, 230, 170, 0.856);
   }
   
   
