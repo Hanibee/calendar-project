@@ -4,6 +4,7 @@ function index(req, res) {
     Task.find({})
     .then(tasks => {
         console.log(tasks)
+        console.log(req.user)
         res.render('tasks/index', {tasks})
     })
     .catch(err => console.error(err))
