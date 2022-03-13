@@ -8,9 +8,10 @@ router.get('/', function (req, res) {
         events => 
         {
             res.render('calendar/index',{
-            title: 'Calendar', 
-            user: req.user ? req.user : null,
-            events
+                //passing title, user, and events to the calendar
+                title: 'Calendar', 
+                user: req.user ? req.user : null,
+                events
             })
         });
 })

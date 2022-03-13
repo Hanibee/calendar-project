@@ -1,5 +1,6 @@
 # Google Calendar Project
 
+# Getting Started
 Description:
 My app uses the Google Calendar API to allow users to input tasks quickly and directly into their Google Calendar.
 
@@ -10,7 +11,8 @@ Screenshots of Application:
 ![Image 2](https://raw.githubusercontent.com/Hanibee/calendar-project/main/public/images/screenshot2.png)
 ![Image 3](https://raw.githubusercontent.com/Hanibee/calendar-project/main/public/images/screenshot3.png)
 
-List of technologies used:
+
+# Technologies Used: 
 - Heroku
 - Node JS
 - Express
@@ -30,7 +32,7 @@ Troubleshooting:
 Most calendar apis use require() for their examples, but I could only use import(), because application's type was set to module in server.js, so I worked around that by using Nylas instead of the official Google Calendar API.
 
 
-Next steps:
+# Next Steps
 
 Adding events/tasks to Google Calendar and allowing users to customize their calendars and profiles more.
 
